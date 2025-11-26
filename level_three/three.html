@@ -6,7 +6,7 @@
     <title>Level Three – Tailwind Activity</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="min-h-screen bg-slate-950 text-slate-100">
+  <body class="min-h-screen bg-slate-950 text-slate-100 bg-gradient-to-b from-slate-950 via-slate-950 to-slate-900">
     <main class="mx-auto max-w-5xl space-y-12 p-12">
       <header class="space-y-4 text-center">
         <p class="text-sm uppercase tracking-[0.35em] text-cyan-300">Workshop</p>
@@ -19,7 +19,7 @@
       <!-- Task 1 (Hero Accent Bar): Add `relative overflow-hidden rounded-3xl border border-cyan-400/40 bg-slate-900`
            to `.hero-panel`. The border and background utilities craft a futuristic shell for the headline. -->
       <!-- tw:YWktc2lnbmFsLWxldmVsLXRocmVlLXRhc2sx -->
-      <section class="hero-panel p-10">
+      <section class="hero-panel p-10 relative overflow-hidden rounded -3x1 border border-cyan-400/40 bg-slate-900 before:absolute before:inset-0 before:bg-gradient-to-r before:from from-cyan-500/20 before:to-fuchsia-500 berfore:blur-3xl">
         <div class="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div class="space-y-3">
             <h2 class="text-3xl font-semibold">Product Design Live</h2>
@@ -31,7 +31,7 @@
             <span class="rounded-full bg-cyan-400/20 px-4 py-2 text-sm uppercase tracking-wide text-cyan-200">
               15 seats left
             </span>
-            <button class="rounded-full px-6 py-3 font-semibold">
+            <button class="rounded-full px-6 py-3 font-semibold bg-cyan-400 text-slate-950 hover:bg-cyan-300 transition text-xs fons-semibold animate-pulse">
               Reserve spot
             </button>
           </div>
@@ -49,9 +49,9 @@
       <!-- Task 4 (Seat Badge): Apply `text-xs font-semibold` to the badge span to refine typography scale. -->
       <!-- tw:YWktc2lnbmFsLWxldmVsLXRocmVlLXRhc2s0 -->
 
-      <section class="rounded-3xl border border-slate-800 bg-slate-900/60 p-10">
+      <section class="rounded-3xl border border-slate-800 bg-slate-900/60 p-10 divide-y divide-slate-800">
         <h3 class="text-2xl font-semibold">Agenda Highlights</h3>
-        <ul class="mt-6 space-y-4 text-slate-300">
+        <ul class="mt-6 space-y-4 text-slate-300 md:grid md:grid-cols-2 md:gap-6 animate-pulse">
           <li>Design token systems and automation</li>
           <li>Real-time component handoff strategies</li>
           <li>Motion-first storytelling and prototyping</li>
